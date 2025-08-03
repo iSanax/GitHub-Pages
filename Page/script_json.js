@@ -1,7 +1,18 @@
-const files = [
-  'Data/Adam Jabczyk.json',
-  'Data/Jan Kowalski.json'
-];
+const files = [];
+fetch('https://api.github.com/repos/iSanax/GitHub-Pages/contents/Page/Data')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(file => {
+      if (file.type === 'file') {
+        files.push(file.path);
+      }
+    });
+    console.log('Pliki:', files);
+  })
+  .catch(err => {
+    console.error('Błąd pobierania listy plików:', err);
+  });
+
 
 const allRows = [];
 
@@ -32,7 +43,19 @@ files.forEach(filePath => {
           <td>${item.anime}</td>
           <td>${fileName}</td>
           <td>${item.description}</td>
+          <td><button>Kopiuj</button></td>
         `;
+
+        const btn = row.querySelector("button");
+        btn.addEventListener("click", () => {
+          const textToCopy = `Proszę o upload\nLektor: ${fileName}\nAnime: ${item.anime}`;
+          navigator.clipboard.writeText(textToCopy).then(() => {
+            showToast("Skopiowano do schowka");
+          }).catch(err => {
+            showToast("Błąd kopiowania: " + err);
+          });
+        });
+
         allRows.push(row);
       });
 
@@ -59,3 +82,15 @@ document.getElementById("search").addEventListener("input", function () {
   tableBody.innerHTML = '';
   sortedFiltered.forEach(row => tableBody.appendChild(row));
 });
+
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.style.visibility = "visible";
+  toast.style.opacity = "1";
+
+  setTimeout(() => {
+    toast.style.opacity = "0";
+    toast.style.visibility = "hidden";
+  }, 2000);
+}
