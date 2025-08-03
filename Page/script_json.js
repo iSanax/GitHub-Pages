@@ -4,7 +4,7 @@ fetch('https://api.github.com/repos/iSanax/GitHub-Pages/contents/Page/Data')
   .then(data => {
     data.forEach(file => {
       if (file.type === 'file') {
-        files.push(file.path);
+        files.push("Data/"+file.name);
       }
     });
     console.log('Pliki:', files);
