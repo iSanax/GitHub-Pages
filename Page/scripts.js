@@ -1,4 +1,4 @@
-fetch('Data/Test.json')
+fetch('Data/Jan Kowalski.json')
   .then(response => {
     if (!response.ok) {
       throw new Error("Błąd przy pobieraniu danych");
@@ -11,9 +11,8 @@ fetch('Data/Test.json')
     data.forEach(item => {
       const row = document.createElement("tr");
       row.innerHTML = `
-        <td>${item.name}</td>
-        <td>${item.age}</td>
-        <td>${item.email}</td>
+        <td>${item.anime}</td>
+        <td>${item.description}</td>
       `;
       tableBody.appendChild(row);
     });
