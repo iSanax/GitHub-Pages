@@ -5,4 +5,4 @@ function createURL() {
 }
 
 console.log('Path:', createURL();
-console.log('Test:', 1+1;
+console.log('Test:', 1+1);
