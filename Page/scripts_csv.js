@@ -1,10 +1,3 @@
-// const url = 'https://api.github.com/repos/iSanax/GitHub-Pages/contents/Page/Data';
-function createURL() {
-    //return 1+1;
-    return window.location.pathname;
-}
-console.log('Path:', createURL();
-
 async function getFileNames() {
     const url = 'https://api.github.com/repos/iSanax/GitHub-Pages/contents/Page/Data';
     try {
