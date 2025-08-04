@@ -72,7 +72,7 @@ Main/
 ##  Własny projekt
 Jednie to trzeba zdecydować, którą jest dla ciebie najlepsza. `json` jest przejrzysty, ale gorszy do edytowania można łatwiej popełnić błąd. `csv` mniej przejrzysty łatwiejszy do edytowania dla większości osób, można edytować za pomocą exela.
 
-Zgodnie z powyższym `json` otrzymamy tabele:
+Zgodnie z powyższym [`json`](#przykład-struktury-folderu)otrzymamy tabele:
 
 | Anime     | Lektor        | Komentarz | Szablon |
 |-----------|---------------|-----------|---------|
