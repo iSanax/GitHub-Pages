@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #292929;
+  font-family: sans-serif;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 36px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+/* Header */
+
+/* Input search */
+label[for="search"] {
+  display: block;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 10px auto 5px auto;
+  text-align: center;
+}
+
+#search {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 15px;
+  width: 80%;
+  max-width: 400px;
+  font-size: 18px;
+  border: 3px solid #555; /* ⬅️ cienka obramówka dla lepszej widoczności */
+  border-radius: 8px;
+  background-color: #2a2a2a; /* ⬅️ jaśniejsze tło */
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05); /* subtelny jasny cień */
+  outline: none;
+  transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+#search:focus {
+  background-color: #333;
+  border-color: #888;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+/* Input search */
+
+/* Tabl */
+#data-table {
+  width: 90%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background-color: #333;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  table-layout: fixed;
+}
+
+#data-table thead {
+  background-color: #444;
+}
+
+#data-table th, #data-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #555;
+}
+
+#data-table tbody tr:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+#data-table th {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* Tabl */
+
+/* Copy button */
+#copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+#copy-btn:hover {
+  background-color: #333;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+#copy-btn:active {
+  transform: scale(0.95);
+}
+/* Copy button */
+
+/* Toast */
+#toast {
+  visibility: hidden;
+  min-width: 200px;
+  background-color: #bcbcbc;
+  color: #333;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  font-family: sans-serif;
+  font-size: 24px;
+  transition: visibility 0.3s, opacity 0.3s ease;
+  opacity: 0;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+/* Toast */
