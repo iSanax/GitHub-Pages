@@ -59,6 +59,7 @@ Przykładowo, gdy użyjemy  `folderReader.create_json()` otrzymamy plik z nazwą
 
 # GitHub-Pages
 Przykładowy szablo strony z wykorzystaniem  `GitHub-Pages` gotowy do wklejenia.
+
 ##  Struktura katalogów
 ```
 Main/
@@ -72,7 +73,7 @@ Main/
 ##  Własny projekt
 Jednie to trzeba zdecydować, którą jest dla ciebie najlepsza. `json` jest przejrzysty, ale gorszy do edytowania można łatwiej popełnić błąd. `csv` mniej przejrzysty łatwiejszy do edytowania dla większości osób, można edytować za pomocą exela.
 
-Zgodnie z powyższym [`json`](#przykład-struktury-folderu)otrzymamy tabele:
+Zgodnie z powyższym [`json`](#przykład-struktury-folderu) otrzymamy tabele:
 
 | Anime     | Lektor        | Komentarz | Szablon |
 |-----------|---------------|-----------|---------|
@@ -80,11 +81,9 @@ Zgodnie z powyższym [`json`](#przykład-struktury-folderu)otrzymamy tabele:
 | OnePiece  | Author_Lektor |           | 📋      |
 | Bleach    | Author_Lektor |           | 📋      |
 
-
-
 1. Utórz *publiczne* repozytrium.
 2. Wejdź do `Settings` w `Code and automation` znajdź `Page` ustaw na *Branch* na `main` `/(root)`.
-3. Pobierz potrzebne pliki zgodnie z *strukturą katalogów*.
+3. Pobierz potrzebne pliki zgodnie z [*strukturą katalogów*](#struktura-katalogów).
 4. Umieść do repozytorium pobrane pliki.
 5. Należy wybrać postać zapisywania danych za pomocą zmiany w pliku `index.html`:
 ```html
