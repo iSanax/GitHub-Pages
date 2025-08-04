@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <title>Hoshi-Upload</title>
+    <meta charset="UTF-8" />
+    <title>Hoshi-Upload</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Anime</h1>
     <label for="search">Anime:</label>
     <input type="text" id="search" placeholder="Wpisz tytuł..." />
     <table id="data-table" border="1">
+        <colgroup>
+            <col style="width: 30%;">
+            <col style="width: 20%;">
+            <col style="width: auto;">
+            <col style="width: 8%;">
+        </colgroup>
         <thead>
             <tr>
                 <th>Anime</th>
@@ -19,22 +26,7 @@
         </thead>
     <tbody></tbody>
     </table>
-    <div id="toast" style="
-    visibility: hidden;
-    min-width: 200px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-    position: fixed;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
-    font-family: sans-serif;
-    font-size: 24px;
-    "></div>
+    <div id="toast"></div>
     <script src="script_json.js"></script>
     <!-- <script src="script_csv.js"></script> -->
 </body>
