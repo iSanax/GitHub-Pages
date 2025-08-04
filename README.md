@@ -57,7 +57,7 @@ Przykładowo, gdy użyjemy  `folderReader.create_json()` otrzymamy plik z nazwą
 
 ---
 
-# GitHub-Pages
+# [GitHub-Pages](https://isanax.github.io/GitHub-Pages/Page/index.html)
 Przykładowy szablo strony z wykorzystaniem  `GitHub-Pages` gotowy do wklejenia.
 
 ##  Struktura katalogów
